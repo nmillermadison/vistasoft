@@ -112,7 +112,7 @@ if (f < 1)
   return;
 end
 
-fprintf (f, 'mrtrix fibers\ndatatype: Float32LE\ncount: %d\n', prod(size(fibers.data)));
+fprintf (f, 'mrtrix tracks\ndatatype: Float32LE\ncount: %d\n', prod(size(fibers.data)));
 names = fieldnames(fibers);
 for i=1:size(names)
   if strcmpi (names{i}, 'data'), continue; end
